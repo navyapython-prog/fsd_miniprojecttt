@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Be Vietnam' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Deitel</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/logo.png' %}" alt="Company Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <img src="{% static 'images/main.png' %}" alt="Hero Image" class="hero-image">
+    </section>    
+    
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="{% static 'images/product1.png' %}" alt="Product 1">
+            </div>
+            <div class="slide">
+                <img src="{% static 'images/product2.png' %}" alt="Product 2">
+            </div>
+            <div class="slide">
+                <img src="{% static 'images/product3.png' %}" alt="Product 3">
+            </div>
+        </div>
+    </section>
+    
+    <section class="about panel">
+        <div class="about-content panel-content">
+            <h2>About Us</h2>
+            <p>DEITEL Engineering Solutions LLP, an engineering enterprise is in the service of providing value added engineering solutions and support services to the industry for many years. As a service provider we work closely with the industry in developing new products, upgrade existing products, analyze / validate designs, test products for their performances, prototyping, process engineering and manufacturing across vehicle segments. </p>
+            <a href="{% url 'about' %}" class="btn">Learn More</a>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="service-content panel-content">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Product Manufacturing & Assembly</h3>
+            <p>We offer comprehensive product manufacturing and assembly services that ensure the highest quality and precision. Our team is equipped with state-of-the-art machinery and industry expertise to handle projects of all sizes.</p>
+        </div>
+        <div class="service">
+            <h3>Gaskets & Shims</h3>
+            <p> Our gaskets and shims are designed to meet the most demanding specifications. We use high-quality materials to produce durable and reliable components for various applications.</p>
+        </div>
+        <div class="service">
+            <h3>O-Rings & Rubber Products</h3>
+            <p>We provide a wide range of O-rings and rubber products that are engineered for optimal performance in different environments. Our products are known for their resilience and longevity.</p>
+        </div>
+        <a href="{% url 'services' %}" class="btn">View All Services</a>
+    </div>
+    </section>
+    
+    <section class="contact panel">
+        <div class="contact-content panel-content">
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Contact us today!</p>
+            <a href="{% url 'contact' %}" class="btn">Get in Touch</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Deitel Engineering Solutions LLP. All rights reserved.</p>
+    </footer>
+</body>
+</html>

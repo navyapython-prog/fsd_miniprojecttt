@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Deitel</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <script src="{% static 'js/about.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/logo.png' %}" alt="Company Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="panel">
+            <div class="panel-content">
+                <h2>Why Deitel?</h2>
+                <p>The leadership team of DEITEL consists of engineers with decades of experience from the industry. Domain expertise includes automotive, aerospace, heavy engineering and off-highway vehicles. Team consists of,
+
+                    Expert design engineers
+                    Analysis and simulation experts
+                    Manufacturing Process experts
+                    Tool design experts
+                    Well trained engineers
+                    Our technology skill set include expertise working on product design and development of parts, systems and solutions using leading design tools, simulation and validation tools, testing tools, etc for both mechanical and electronic areas of engineering.
+                    
+                    Our process experts are well experienced in the fields of engineering details, GD&T, Quality engineering, DFM, Stack-up Analysis, VA/VE, SCM etc.</p>
+            </div>
+        </section>
+        <section class="panel">
+            <div class="panel-content">
+                <h2>Lightweight Solutions</h2>
+                <p>Combined capabilities of DEITEL in product design, engineering, material science and manufacturing processes has helped develop many challenging solutions for the industry in weight reduction and replacement engineering. One of the key areas we support using our strengths is light weight engineering solutions for the emerging markets in automotive and aerospace industry.
+
+                    We support the industry in weight reduction programs using light weight composite solutions. Conversion of metallic parts to equivalent composites parts, multi-material (hybrid parts) are areas where we support customers in developing new products.</p>
+            </div>
+        </section>
+        <section class="panel">
+            <div class="panel-content">
+                <h2>Career</h2>
+                <p>Candidates with relevant experience in following areas can apply to hr@deitel.in 
+
+                    Mechanical design for automotive and non-auto domains
+                    Analysis and simulation engineers
+                    Manufacturing engineering
+                    Automotive electronics and embedded system areas
+                    Technical writers and illustrators with aero/non-aero background
+                    Senior engineers/Subject matter experts in key engineering domains (30+ years exp)</p>
+            </div>
+        </section>
+        <section class="panel">
+            <div class="panel-content gallery">
+                <h2>Infrastructure</h2>
+                <div class="slides">
+                    <div class="slide">
+                        <img src="{% static 'images/infrastructure1.png' %}" alt="Infrastructure Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="{% static 'images/infrastructure2.png' %}" alt="Infrastructure Image 2">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Deitel Engineering Solutions LLP. All rights reserved.</p>
+    </footer>
+</body>
+</html>

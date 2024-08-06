@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Be Vietnam' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <script src="{% static 'js/services.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/logo.png' %}" alt="Company Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="panel" id="panel-1">
+            <div class="panel-content">
+                <img src="{% static 'images/Product Manufacturing & Assembly.png' %}" alt="Product Manufacturing & Assembly">
+                <div class="content">
+                    <h2>Product Manufacturing & Assembly</h2>
+                    <p>We offer comprehensive product manufacturing and assembly services that ensure the highest quality and precision. Our team is equipped with state-of-the-art machinery and industry expertise to handle projects of all sizes.</p>
+                </div>
+            </div>
+        </section>
+        <section class="panel" id="panel-2">
+            <div class="panel-content">
+                <img src="{% static 'images/Gaskets & Shims.png' %}" alt="Gaskets & Shims">
+                <div class="content">
+                    <h2>Gaskets & Shims</h2>
+                    <p>Our gaskets and shims are designed to meet the most demanding specifications. We use high-quality materials to produce durable and reliable components for various applications.</p>
+                </div>
+            </div>
+        </section>
+        <section class="panel" id="panel-3">
+            <div class="panel-content">
+                <img src="{% static 'images/O-Rings & Rubber Products.png' %}" alt="O-Rings & Rubber Products">
+                <div class="content">
+                    <h2>O-Rings & Rubber Products</h2>
+                    <p>We provide a wide range of O-rings and rubber products that are engineered for optimal performance in different environments. Our products are known for their resilience and longevity.</p>
+                </div>
+            </div>
+        </section>
+        <section class="panel" id="panel-4">
+            <div class="panel-content">
+                <img src="{% static 'images/Forged Parts.png' %}" alt="Forged Parts">
+                <div class="content">
+                    <h2>Forged Parts</h2>
+                    <p>Our forged parts are manufactured to the highest standards, ensuring strength and durability. We offer custom forging solutions tailored to your specific needs.</p>
+                </div>
+            </div>
+        </section>
+        <section class="panel" id="panel-5">
+            <div class="panel-content">
+                <img src="{% static 'images/Composite Part Design & Manufacturing.png' %}" alt="Composite Part Design & Manufacturing">
+                <div class="content">
+                    <h2>Composite Part Design & Manufacturing</h2>
+                    <p>We specialize in the design and manufacturing of composite parts, providing lightweight and high-strength solutions for various industries, including automotive and aerospace.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Deitel Engineering Solutions LLP. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,244 @@
+/* styles.css */
+
+/* Global styles */
+
+body {
+    font-family: 'Be Vietnam', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('{% static "images/hero-bg.jpg" %}') no-repeat center/cover;
+    background-color: #f0f0f0; /* Fallback color */
+    height: 100%; /* Ensure the body takes up the full viewport height */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+header {
+    position: relative;
+    background-color: navy;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure header is above background */
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    height: 35px;
+}
+
+section {
+    padding: 60px 20px;
+    margin: 20px auto;
+    width: 80%; /* Ensure consistent width for all sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+.service-content{
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+/* Hero section */
+section.hero {
+    height: 40vh; /* 2/5th of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    position: relative; /* Ensure child elements are positioned relative to this */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire section */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Slider section */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%; /* Each slide takes 100% width */
+    transition: transform 2s ease-in-out;
+}
+
+.slides img {
+    width: 100%; /* Ensure images fill the slide container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.nav-btns {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btns button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-btns button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Panel styles */
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+.panel-content {
+    text-align: center;
+    width: 100%;
+}
+
+.service {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.service h3 {
+    font-size: 20px;
+    color: navy;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* Contact section */
+.contact-content {
+    text-align: center;
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Contact success section */
+.contact-success {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+.contact-success-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.contact-success-content h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-success-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-success-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contact-success-content .btn:hover {
+    background-color: darkblue;
+}
+
+
